@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap2.css">
+    <style>
+          .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+          }
+          .button3 {border-radius: 8px;}
+
+
+    </style>
+</head>
+<body>
+    <main class="col-4 col-lg-6  mx-auto">
+        <header class="text-center">
+            <h1 style ="color:lightgreen" class="text-uppercase">Banking Details</h1>
+        </header>
+    <form target="_blank" action="Successfull_Payment.html" method="get" class="font-weight-bold">
+    
+    <div id="banknameField" name="bankname" ></div>
+        <label for="fName">Bank Name</label><br/>
+        <input  type="text" name="bName" id="bName" autocomplete="off" class ="form-control"  required>
+    </div>
+
+    <div id="cardNumberField" name="cardNumber">
+        <label for="cardNumber">Card Number</label><br/>   
+        <input type="text" name="cardNumber" id = "cardNumber" class ="form-control" autocomplete="off" required>
+    </div>
+
+    <div id="doeField" name="doeField">
+        <label for="doe">Date Of Expiry*</label><br/>
+        <input type="Date" name="doe" id="doe" class ="form-control"  required>
+    </div>
+
+    
+
+    <div id="cvvField" name="cvv">
+        <label for="cvv">Cvv</label><br/>
+        <input type="text" id="Cvv" name="cvv" class ="form-control" autocomplete="off" required>
+    </div>
+
+    <div id="tcField" name="tc">
+        <label for="tc">Do you Accept the T&Cs*</label><br/>
+        <input type="checkbox" id="tc" name="tc"  required>
+    </div>
+
+    <div id="submitButton">
+        <input type="submit"  class="button button3" />
+    </div>
+</form>
+</body>
+</html>

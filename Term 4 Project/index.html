@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - Shopping Cart</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css" >
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3 {border-radius: 8px;}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <a href="#" class="logo">KS Foods</a>
+            <!--Search Bar-->
+            <div class="topnav" >
+                <input type="text" placeholder="Search..">
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+             
+            <!-- Cart-Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content">
+
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R0</div>
+                </div>
+                <!-- Buy Button -->
+                <form action="../Html/PaymentGate.html">
+                    <input type="submit" class="btn-buy" value="Proceed to Checkout" />
+                </form>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+
+            </div>
+        </div>
+    </header>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="img/product1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Carrots</h2>
+                <span class="price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="img/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cucumbers</h2>
+                <span class="price">$28,90</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="img/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Bananas</h2>
+                <span class="price">$19,50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="img/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Beans</h2>
+                <span class="price">$23.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="img/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Egg Plants</h2>
+                <span class="price">$42,00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="img/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cauliflower</h2>
+                <span class="price">$38,00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="img/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Broccoli</h2>
+                <span class="price">$32,00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="img/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Sweet Corn</h2>
+                <span class="price">$31,99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div><br><br><br>
+        <form action="../Admin/Login.html">
+            <input type="submit" class="button button3" value="Admin Login" />
+        </form>
+    </section>
+    <!-- Link TO JS -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
